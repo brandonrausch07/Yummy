@@ -32,6 +32,40 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+html,
+body {
+  margin: 0;
+}
+
+.banner {
+  background: #009579;
+}
+
+.banner__content {
+  padding: 16px;
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.banner__text {
+  flex-grow: 1;
+  line-height: 1.4;
+  font-family: "Quicksand", sans-serif;
+}
+
+.banner__close {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.banner__text,
+.banner__close > span {
+  color: #ffffff;
+}
+
 body {
   font-family: var(--font-default);
   color: var(--color-default);
@@ -43,7 +77,7 @@ a {
 }
 
 a:hover {
-  color: #ec2727;
+  color: white;
   text-decoration: none;
 }
 
@@ -65,7 +99,7 @@ section {
 }
 
 .section-bg {
-  background-color: #eee;
+  background-color: #b2192d;
 }
 
 .section-header {
@@ -245,7 +279,7 @@ section {
 # Header
 --------------------------------------------------------------*/
 .header {
-  background: #fff;
+  background: #b0171f;
   transition: all 0.5s;
   z-index: 997;
   height: 90px;
@@ -271,7 +305,7 @@ section {
 .header .logo h1 {
   font-size: 28px;
   font-weight: 700;
-  color: #000;
+  color: black;
   margin: 0;
   font-family: var(--font-secondary);
 }
@@ -280,21 +314,27 @@ section {
   color: var(--color-primary);
 }
 
-.header .btn-book-a-table,
-.header .btn-book-a-table:focus {
+.header .btn-book-a-table2,
+.header .btn-book-a-table2:focus {
   font-size: 14px;
   color: #fff;
   background: var(--color-primary);
   padding: 8px 20px;
   margin-left: 30px;
-  border-radius: 50px;
+  
   transition: 0.3s;
 }
 
-.header .btn-book-a-table:hover,
-.header .btn-book-a-table:focus:hover {
+.header .btn-book-a-table2:hover,
+.header .btn-book-a-table2:focus:hover {
   color: #fff;
   background: rgba(206, 18, 18, 0.8);
+}
+
+.header .btn-book-a-table2:hover,
+.header .btn-book-a-table2:focus:hover {
+  color: #fff;
+  background: blue(206, 18, 18, 0.8);
 }
 
 section {
@@ -335,7 +375,7 @@ section {
     font-family: var(--font-secondary);
     font-size: 16px;
     font-weight: 600;
-    color: #7f7f90;
+    color: white;
     white-space: nowrap;
     transition: 0.3s;
     position: relative;
@@ -355,7 +395,7 @@ section {
     height: 2px;
     bottom: -6px;
     left: 0;
-    background-color: var(--color-primary);
+    background-color: red;
     visibility: hidden;
     width: 0px;
     transition: all 0.3s ease-in-out 0s;
@@ -385,7 +425,7 @@ section {
     z-index: 99;
     opacity: 0;
     visibility: hidden;
-    background: #fff;
+    background: red;
     box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
     transition: 0.3s;
     border-radius: 4px;
@@ -501,12 +541,12 @@ section {
 
   .navbar a:hover,
   .navbar li:hover>a {
-    color: #000;
+    color: white;
   }
 
   .navbar .active,
   .navbar .active:focus {
-    color: #000;
+    color: white;
     border-color: var(--color-primary);
   }
 
@@ -559,7 +599,7 @@ section {
     content: "";
     position: fixed;
     inset: 0;
-    background: rgba(255, 255, 255, 0.8);
+    background: #b2192d;
     z-index: 9996;
   }
 }
@@ -582,7 +622,7 @@ section {
   left: 10%;
   right: 10%;
   bottom: 10%;
-  background-color: #fff;
+  background-color: #b2192d;
   box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.08);
   padding: 20px;
   text-align: center;
@@ -650,7 +690,7 @@ section {
   border: 5px solid rgba(206, 18, 18, 0.7);
   top: -15%;
   left: -15%;
-  background: rgba(198, 16, 0, 0);
+  background: #b2192d;
 }
 
 .about .play-btn:after {
@@ -708,7 +748,7 @@ section {
 .why-us .why-box {
   padding: 30px;
   background: var(--color-primary);
-  color: #fff;
+  color: #b2192d;
 }
 
 .why-us .why-box h3 {
@@ -723,9 +763,9 @@ section {
 
 .why-us .why-box .more-btn {
   display: inline-block;
-  background: rgba(255, 255, 255, 0.3);
+  background: #b2192d
   padding: 6px 30px 8px 30px;
-  color: #fff;
+  color: #b2192d;
   border-radius: 50px;
   transition: all ease-in-out 0.4s;
 }
@@ -736,12 +776,12 @@ section {
 
 .why-us .why-box .more-btn:hover {
   color: var(--color-primary);
-  background: #fff;
+  background:#b2192d;
 }
 
 .why-us .icon-box {
   text-align: center;
-  background: #fff;
+  background: #b2192d;
   padding: 40px 30px;
   width: 100%;
   height: 100%;
@@ -963,7 +1003,7 @@ section {
 
 .testimonials .testimonial-item .quote-icon-left,
 .testimonials .testimonial-item .quote-icon-right {
-  color: #f05656;
+  color: #b2192d;
   font-size: 26px;
   line-height: 0;
 }
@@ -1215,7 +1255,7 @@ section {
 .book-a-table .php-email-form .error-message {
   display: none;
   color: #fff;
-  background: #df1529;
+  background: #b2192d;
   text-align: left;
   padding: 15px;
   margin-bottom: 24px;
@@ -1277,13 +1317,13 @@ section {
   background: var(--color-primary);
   border: 0;
   padding: 14px 60px;
-  color: #fff;
+  color: #b2192d;
   transition: 0.4s;
   border-radius: 50px;
 }
 
 .book-a-table .php-email-form button[type=submit]:hover {
-  background: #ec2727;
+  background: #b2192d;
 }
 
 @keyframes animate-loading {
@@ -1331,7 +1371,7 @@ section {
   .gallery .swiper-slide-active {
     border: 6px solid var(--color-primary);
     padding: 4px;
-    background: #fff;
+    background: #b2192d;
     z-index: 1;
     transform: scale(1.2);
   }
@@ -1469,7 +1509,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #ec2727;
+  background: red;
 }
 
 @keyframes animate-loading {
@@ -1497,7 +1537,7 @@ section {
   font-size: 64px;
   font-weight: 700;
   margin-bottom: 20px;
-  color: var(--color-secondary);
+  color:white
   font-family: var(--font-primary);
 }
 
@@ -1506,7 +1546,7 @@ section {
 }
 
 .hero p {
-  color: #4f4f5a;
+  color: white;
   font-weight: 400;
   margin-bottom: 30px;
 }

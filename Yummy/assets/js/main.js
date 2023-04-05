@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
   document.addEventListener('scroll', navbarlinksActive);
 
   /**
-   * Mobile nav toggle
+   * Mobile nav togie
    */
   const mobileNavShow = document.querySelector('.mobile-nav-show');
   const mobileNavHide = document.querySelector('.mobile-nav-hide');
